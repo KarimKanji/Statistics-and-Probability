@@ -1,1 +1,0 @@
-## Projekt 3 - Glidande medelvärde
