@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="textViewCol1"
+            app:title="Kolumn 1"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="textViewCol2"
+            app:title="Kolumn 2"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="textViewRow1"
+            app:title="Rad 1"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="textViewRow2"
+            app:title="Rad 2"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="signifikansniva"
+            app:title="Signifikansnivå"
+            app:useSimpleSummaryProvider="true" />
+
+
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewCol1"
+                android:layout_width="match_parent"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="4dp"
+                android:text="textViewCol1" />
+
+            <TextView
+                android:id="@+id/textViewCol2"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="4dp"
+                android:text="textViewCol2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewRow1"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="4dp"
+                android:text="textViewRow1" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="buttonClick"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="buttonClick"
+                android:text="0" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewRow2"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="4dp"
+                android:text="textViewRow2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="buttonClick"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="buttonClick"
+                android:text="0" />
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSettings"
+        android:layout_width="49dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="btnSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/chi2Resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:text="Chi-2 resultat:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/signifikansniva"
+        android:layout_width="61dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="4dp"
+        android:text="nmr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/pvarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="292dp"
+        android:text="P-värde:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="160dp"
+        android:text="Signifikansnivå: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chi2Resultat" />
+
+    <TextView
+        android:id="@+id/statString"
+        android:layout_width="98dp"
+        android:layout_height="67dp"
+        android:text="Rubrik av row 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/col1StatOut"
+        android:layout_width="76dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:text="Andel%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/statString"
+        app:layout_constraintEnd_toStartOf="@+id/col2StatOut"
+        app:layout_constraintStart_toEndOf="@+id/statString" />
+
+    <TextView
+        android:id="@+id/col2StatOut"
+        android:layout_width="76dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="36dp"
+        android:text="Andel%"
+        app:layout_constraintBaseline_toBaselineOf="@+id/statString"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="208dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="44dp"
+        android:text="Resultatets sannolikhet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pvarde" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="99dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
